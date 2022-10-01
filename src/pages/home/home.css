@@ -56,3 +56,26 @@
 .main__header-right:hover .main__header-circle {
     filter: blur(5px);
 }
+
+/* =======================  PROGRAMS  ==================== */
+.programs {
+    margin-top: 4rem;
+}
+
+.progrmas__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.programs__program a {
+    display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.programs__program:hover a{
+    background: var(--color-secondary);
+    color: var(--color-gray-600);
+}
