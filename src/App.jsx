@@ -8,6 +8,7 @@ import Plans from './pages/plans/Plans';
 import NotFound from './pages/notFound/Notfound';
 import Trainers from './pages/trainers/Trainers';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
         <Routes> 
-          <Route index element={<Home/>} />
+          <Route index path='home' element={<Home/>} />
           <Route path='about' element={<About/>} />
           <Route path='gallery' element={<Gallery/>} />
           <Route path='plans' element={<Plans/>} />
@@ -23,7 +24,9 @@ const App = () => {
           <Route path='contact' element={<Contact/>} />
           <Route path='*' element={<NotFound/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
+      
     </div>
   )
 }
